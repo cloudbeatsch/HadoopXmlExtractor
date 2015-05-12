@@ -1,0 +1,42 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type = "text/xsl" href="configuration.xsl"?>
+<configuration>
+  <property>
+    <name>xmlextractor.delimiter_string</name>
+    <value>;</value>
+  </property>
+  <property>
+    <name>xmlextractor.sort_order_delimiter_string</name>
+    <value>#</value>
+  </property>
+  <property>
+    <name>xmlextractor.output_delimiter_string</name>
+    <value>;</value>
+  </property>
+  <property>
+    <name>xmlextractor.nodes</name>
+    <value>store;address;inventory;book;</value>
+  </property> 
+  <property>
+    <name>xmlextractor.nr_of_columns</name>
+    <value>6</value>
+  </property>
+
+  <property>
+    <name>store</name>
+    <value>store;true;false; ;0#//store/@name;</value>
+  </property> 
+  <property>
+    <name>address</name>
+    <value>address;false;true; ;1#//address/phone/text();</value>
+  </property> 
+  <property>
+    <name>inventory</name>
+    <value>inventory;true;false; ;2#//inventory/@month;3#//inventory/@day;</value>
+  </property> 
+  <property>
+    <name>book</name>
+    <value>book;true;false; ;4#//book/@id;5#//book/@inStock;</value>
+  </property> 
+</configuration>
+

@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<store name="SohoBooks">
+   <address>
+      <street>Soho</street>
+      <nr>42</nr>
+      <city>London</city>
+      <phone>11553377</phone>
+   </address>
+   <inventory month="January" day="3">
+      <books>
+         <book id="bk101" inStock="10">
+            <author>Gambardella, Matthew</author>
+            <title>XML Developer's Guide</title>
+            <genre>Computer</genre>
+            <price>44.95</price>
+            <publish_date>2000-10-01</publish_date>
+            <description>An in-depth look at creating applications 
+            with XML.</description>
+         </book>
+         <book id="bk102" inStock="3">
+            <author>Ralls, Kim</author>
+            <title>Midnight Rain</title>
+            <genre>Fantasy</genre>
+            <price>5.95</price>
+            <publish_date>2000-12-16</publish_date>
+            <description>A former architect battles corporate zombies, 
+            an evil sorceress, and her own childhood to become queen 
+            of the world.</description>
+         </book>
+         <book id="bk103" inStock="22">
+            <author>Corets, Eva</author>
+            <title>Maeve Ascendant</title>
+            <genre>Fantasy</genre>
+            <price>5.95</price>
+            <publish_date>2000-11-17</publish_date>
+            <description>After the collapse of a nanotechnology 
+            society in England, the young survivors lay the 
+            foundation for a new society.</description>
+         </book>
+         <book id="bk106" inStock="13">
+            <author>Randall, Cynthia</author>
+            <title>Lover Birds</title>
+            <genre>Romance</genre>
+            <price>4.95</price>
+            <publish_date>2000-09-02</publish_date>
+            <description>When Carla meets Paul at an ornithology 
+            conference, tempers fly as feathers get ruffled.</description>
+         </book>
+         <book id="bk107" inStock="20">
+            <author>Thurman, Paula</author>
+            <title>Splish Splash</title>
+            <genre>Romance</genre>
+            <price>4.95</price>
+            <publish_date>2000-11-02</publish_date>
+            <description>A deep sea diver finds true love twenty 
+            thousand leagues beneath the sea.</description>
+         </book>
+         <book id="bk108" inStock="4">
+            <author>Knorr, Stefan</author>
+            <title>Creepy Crawlies</title>
+            <genre>Horror</genre>
+            <price>4.95</price>
+            <publish_date>2000-12-06</publish_date>
+            <description>An anthology of horror stories about roaches,
+            centipedes, scorpions  and other insects.</description>
+         </book>
+      </books>
+   </inventory>
+   <inventory month="February" day="2">
+      <books>
+         <book id="bk101" inStock="17">
+            <author>Gambardella, Matthew</author>
+            <title>XML Developer's Guide</title>
+            <genre>Computer</genre>
+            <price>44.95</price>
+            <publish_date>2000-10-01</publish_date>
+            <description>An in-depth look at creating applications 
+            with XML.</description>
+         </book>
+         <book id="bk103" inStock="32">
+            <author>Corets, Eva</author>
+            <title>Maeve Ascendant</title>
+            <genre>Fantasy</genre>
+            <price>5.95</price>
+            <publish_date>2000-11-17</publish_date>
+            <description>After the collapse of a nanotechnology 
+            society in England, the young survivors lay the 
+            foundation for a new society.</description>
+         </book>
+         <book id="bk106" inStock="23">
+            <author>Randall, Cynthia</author>
+            <title>Lover Birds</title>
+            <genre>Romance</genre>
+            <price>4.95</price>
+            <publish_date>2000-09-02</publish_date>
+            <description>When Carla meets Paul at an ornithology 
+            conference, tempers fly as feathers get ruffled.</description>
+         </book>
+         <book id="bk107" inStock="2">
+            <author>Thurman, Paula</author>
+            <title>Splish Splash</title>
+            <genre>Romance</genre>
+            <price>4.95</price>
+            <publish_date>2000-11-02</publish_date>
+            <description>A deep sea diver finds true love twenty 
+            thousand leagues beneath the sea.</description>
+         </book>
+         <book id="bk108" inStock="3">
+            <author>Knorr, Stefan</author>
+            <title>Creepy Crawlies</title>
+            <genre>Horror</genre>
+            <price>4.95</price>
+            <publish_date>2000-12-06</publish_date>
+            <description>An anthology of horror stories about roaches,
+            centipedes, scorpions  and other insects.</description>
+         </book>
+      </books>
+   </inventory>
+</store>
