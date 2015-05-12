@@ -7,7 +7,7 @@ For instance a data scientist wants to analyze the performance of a particular c
 - Maven: [http://maven.apache.org/](http://maven.apache.org/)
 - Hadoop cluster or HDInsight Emulator:  [http://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-emulator-get-started/](http://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-emulator-get-started/)
 
-## Run the examples in the Emulator ##
+## Run examples in the Emulator ##
 Start the Hadoop local services
 
 Open the Hadoop command line
