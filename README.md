@@ -5,12 +5,14 @@ For instance a data scientist wants to analyze the performance of a particular c
 
 ## Pre-requisites: ##
 - Maven: [http://maven.apache.org/](http://maven.apache.org/)
-- Hadoop cluster or HDInsight Emulator:  [http://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-emulator-get-started/](http://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-emulator-get-started/)
+- Hadoop cluster, Horton Sandbox or HDInsight Emulator
 
-## Run examples in the Emulator ##
-Start the Hadoop local services
+## Run examples on Windows - using HDInsight Emulator ##
+1.) Download and install the HDInsight Emulator [http://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-emulator-get-started/](http://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-emulator-get-started/)
 
-Open the Hadoop command line
+2.) Start the Hadoop local services
+
+3.) Open the Hadoop command line
 
 If this is the first time you use the Emulator you have to start it in Admin mode and run the following 3 commands:
 
@@ -24,9 +26,43 @@ If this is the first time you use the Emulator you have to start it in Admin mod
     net localgroup hdfs <username> /add
 
 
-Change the directory to your repo and run .\scripts\run.bat
+4.) Change the directory to your repo and run .\scripts\run.bat
 
-This will create the respective hdfs directories, copy the sample xml files, build the project, run two sample extractions and display the extraction results.
+The script creates the respective hdfs directories, copies the sample xml files, builds the project, runs two sample extractions and displays the extraction results.
+
+## Run examples on Linux – using Horton Sandbox##
+1.) Download the [Horton Sandbox 2.2](http://hortonworks.com/products/hortonworks-sandbox/) – add to HyperV – then run 
+
+2.) Get the Hadoop bundle tar file
+ 
+	http://mirror.cogentco.com/pub/apache/hadoop/common/hadoop-2.5.2/hadoop-2.5.2.tar.gz
+
+
+3.) Extract that tar file to the ./lib directory after the git pull
+
+4.) Compile the files into a JAR file 
+
+5.) You can download Intellij IDEA Community edition and compile/pack to jar 
+
+	a.) Download and install https://www.jetbrains.com/idea/download/ 
+	b.) Create a new project 
+	c.) Set project structure adding references to the following from the Apache Hadoop lib
+			commons-cli-1.2.jar
+			hadoop-common-2.5.2.jar
+			hadoop-hdfs-2.5.2.jar
+			hadoop-mapreduce-client-app-2.5.2.jar
+			hadoop-mapreduce-client-common-2.5.2.jar
+			hadoop-mapreduce-client-core-2.5.2.jar
+			hadoop-mapreduce-client-hs-2.5.2.jar
+			hadoop-mapreduce-client-jobclient-2.5.2.jar
+	d.) Create a build artifact to generate the JAR file and include dependencies 
+6.) ‘scp’ the files using Putty or similar tools to a directory on the VM Guest 
+
+	a.) Copy the entire directory structure
+		i.) pscp -r <source> <target>
+		ii.) where target is "root@x.x.x.x:~/xmlextract
+
+7.) Then, run the ../scripts/run.sh  
 
 ## Implementation ##
 The class `XmlExtractor` implements the extraction job and takes the following three arguments to run:
